@@ -35,4 +35,8 @@ describe('Hamming', function () {
   it('throws error when strands are not equal length', function() {
     expect(function() { hamming.compute('GGACGGATTCTG', 'AGGAC'); }).to.throw('DNA strands must be of equal length.');
   });
+
+  it('throws error when two strands are not provided', function() {
+    expect(function() { hamming.compute('AGGAC', ''); }).to.throw('Two DNA strands are required.');
+  });
 });
