@@ -8,6 +8,11 @@ class Hamming {
         let hammingDistance = 0;
         if (strandOne.length !== strandTwo.length) {
             throw 'DNA strands must be of equal length.'
+        } else {
+            for(let i = 0; i < strandOne.length; i++) {
+                strandOne[i] != strandTwo[i] ? hammingDistance++ : null;
+                return hammingDistance
+            }
         }
     }
 }
