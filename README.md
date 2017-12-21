@@ -1,6 +1,6 @@
 # Code Challenge
 
-1. Clone this repository
+1. Fork this repository
 2. Solve the problem listed below in one of the listed languages below. (Python or Javascript).
 3. Ensure all of the unit tests pass.
 4. Submit your commits to your fork and send us your repository for review.
