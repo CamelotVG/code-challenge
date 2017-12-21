@@ -5,6 +5,7 @@
 # Resources:
 # https://stackoverflow.com/questions/35328953/how-to-compare-individual-characters-in-two-strings-in-python-3
 # https://docs.python.org/3/library/functions.html#zip
+# https://stackoverflow.com/questions/41821112/how-can-i-sum-the-product-of-two-list-items-using-for-loop-in-python
 
 
 
@@ -13,5 +14,4 @@ def compute(strand_one, strand_two):
     if len(strand_one) != len(strand_two):
         raise ValueError
     else:
-        for nucleotides_one, nucleotides_two in zip(strand_one, strand_two):
-            return sum(nucleotides_one != nucleotides_two)
+        return sum(nucleotides_one != nucleotides_two for nucleotides_one, nucleotides_two in zip(strand_one, strand_two))
