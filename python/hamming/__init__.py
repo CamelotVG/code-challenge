@@ -11,6 +11,17 @@
 
 
 def compute(strand_one, strand_two):
+    """
+    Returns the hamming distance between two DNA strands.
+
+    Args:
+        strand_one (str): The first DNA strand.
+        strand_two (str): The second DNA strand.
+
+    Returns:
+        int: The hamming distance.
+
+    """
     if len(strand_one) != len(strand_two):
         raise ValueError
     else:
