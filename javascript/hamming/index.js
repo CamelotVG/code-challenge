@@ -3,5 +3,13 @@
 // your code meets all of the conditions.
 // You may use ES6 or ES5 to solve.
 
+class Hamming {
+    compute(strandOne, strandTwo) {
+        let hammingDistance = 0;
+        if (strandOne.length !== strandTwo.length) {
+            throw 'DNA strands must be of equal length.'
+        }
+    }
+}
 
 module.exports = Hamming;
