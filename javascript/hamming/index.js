@@ -10,9 +10,9 @@ class Hamming {
             throw 'DNA strands must be of equal length.'
         } else {
             for(let i = 0; i < strandOne.length; i++) {
-                strandOne[i] != strandTwo[i] ? hammingDistance++ : null;
-                return hammingDistance
+                strandOne[i] !== strandTwo[i] ? hammingDistance++ : null;
             }
+                return hammingDistance
         }
     }
 }
